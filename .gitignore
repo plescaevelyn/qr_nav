@@ -1,0 +1,14 @@
+build/
+install/
+log/
+*.pyc
+__pycache__/
+*.egg-info/
+*.swp
+*.bak
+.vscode/
+.idea/
+ros2_ws.code-workspace
+
+*~
+

@@ -1,0 +1,16 @@
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/Image
+      Enabled: true
+      Name: RGB Image
+      Image Topic: /oak/rgb/image_raw
+    - Class: rviz_default_plugins/TF
+      Enabled: true
+      Name: TF
+    - Class: rviz_default_plugins/Pose
+      Enabled: true
+      Name: Tag Pose
+      Topic: /tag_detections
+  Enabled: true
+  Name: root
