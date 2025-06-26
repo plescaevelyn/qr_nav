@@ -107,6 +107,18 @@ ros2 topic echo /qr_marker
 
 ---
 
+## 7. Log Detected Tags (Optional)
+
+To log detected markers (e.g., for mapping or later analysis), run the logger node:
+
+```bash
+ros2 run qr_logger log_node
+```
+
+This node listens for detections (likely on `/qr_pose` or `/tag_detections`) and logs them. Check its source code for file paths or logging details.
+
+---
+
 ## License
 
 MIT License
