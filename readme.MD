@@ -25,7 +25,7 @@ cd ~/ros2_ws/src
 git clone https://github.com/luxonis/depthai-ros.git
 
 # Clone qr_nav
-git clone https://github.com/plescaevelyn/qr_nav.git
+git clone https://github.com/plescaevelyn/qr_nav.git```
 
 ---
 
