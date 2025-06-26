@@ -67,14 +67,14 @@ ros2 launch depthai_ros_driver camera.launch.py
 ### Terminal 2 – Start the QR Detector Node
 
 ```bash
-source ~/ros2_ws/install/setup.bash
+source install/setup.bash
 ros2 run qr_nav_ros2 tag_detector
 ```
 
 ### Terminal 3 – Launch RViz for Visualization
 
 ```bash
-source ~/ros2_ws/install/setup.bash
+source install/setup.bash
 rviz2
 ```
 
