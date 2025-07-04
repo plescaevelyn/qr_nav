@@ -111,7 +111,7 @@ ros2 topic echo /qr_marker
 
 ```bash
 source install/setup.bash
-ros2 run qr_logger log_node
+ros2 run marker_logger marker_logger
 ```
 
 ---
