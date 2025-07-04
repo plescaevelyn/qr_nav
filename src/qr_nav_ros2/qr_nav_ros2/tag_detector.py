@@ -26,7 +26,7 @@ class TagDetectorNode(Node):
                                        [0.0, 878.0, 360.0],
                                        [0.0, 0.0, 1.0]], dtype=np.float32)
         self.dist_coeffs = np.zeros((5, 1), dtype=np.float32)
-        self.tag_size = 0.05  # meters
+        self.tag_size = 0.15  # meters
 
         self.aruco_dicts = {
             'apriltag': cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_APRILTAG_36h11),
@@ -86,7 +86,7 @@ class TagDetectorNode(Node):
 
         pose_msg = PoseStamped()
         pose_msg.header.stamp = self.get_clock().now().to_msg()
-        pose_msg.header.frame_id = frame_id
+        pose_msg.header.frame_id = tag_id
         pose_msg.pose.position.x = x
         pose_msg.pose.position.y = y
         pose_msg.pose.position.z = z
